@@ -18,7 +18,7 @@
       	./sw.nix
       ];
     };
-    nixosConfigurations.edgedev1 = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.gaia = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         home-manager.nixosModules.home-manager 
@@ -28,7 +28,7 @@
         ./users
       	./sw.nix
         ({ pkgs, lib, home-manager, ... }: {
-          networking.hostName = lib.mkForce "edgedev1";
+          networking.hostName = lib.mkForce "gaia";
         })
       ];
     };
