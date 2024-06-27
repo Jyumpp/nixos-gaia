@@ -23,7 +23,8 @@
       fsType = "btrfs";
     };
 
-  swapDevices =
-    [ { device = "/dev/disk/by-label/swap"; }
-    ];
+  fileSystems."/data" = 
+    { device = "/dev/disk/by-label/data";
+      fsType = "btrfs";
+    };
 }
