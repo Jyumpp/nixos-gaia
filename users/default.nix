@@ -26,5 +26,5 @@ in
 
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
-  home-manager.users.edgeadmin = import ./jyumpp-home.nix;
+  home-manager.users.jyumpp = import ./jyumpp-home.nix;
 }
