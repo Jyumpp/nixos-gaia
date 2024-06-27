@@ -12,7 +12,7 @@ let
 in
 {
   users.users = {
-    jyupp = {
+    jyumpp = {
       createHome = true;
       extraGroups = ["wheel" "sudo"];
       group = "users";
